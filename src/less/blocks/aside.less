@@ -1,0 +1,117 @@
+// main: ../style.less
+
+.aside {
+    background-color: #fff;
+
+    .container {
+        width: 100%;
+        height: 100vh;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 35px;
+        padding-bottom: 75px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .menu-block{
+            .logo {
+                display: flex;
+                margin-bottom: 50px;
+
+                .title{
+                    color: #000;
+                    font-family: Poppins-Regular;
+                    font-size: 26px;
+                    font-weight: bold;
+                    letter-spacing: 0.26px;
+                }
+                .version {
+                    padding-top: 18px;
+                    margin-left: 5px;
+                    color: #838383;
+                    font-family: Poppins-Regular;
+                    font-size: 10px;
+                    letter-spacing: -0.1px;
+                }
+            }
+            nav{
+                li{
+                    height: 45px;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 0 10px;
+
+                    a{
+                        display: flex;
+                        align-items: center;
+                        color: #9197B3;
+                        font-family: Poppins-Regular;
+                        font-size: 14px;
+                        letter-spacing: -0.14px;
+
+                        img{
+                            width: 24px;
+                            margin-right: 15px;
+                        }
+                    }
+                    button{
+                        width: 16px;
+                        height: 16px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        background: none;
+                        border: none;
+
+                        img{
+                            width: 16px;
+                            height: 16px;
+                        }
+                    }
+                    &.selected{
+                        border-radius: 8px;
+                        background: #5932EA;
+                        color: #fff;
+                        
+                        a{
+                            color: #ffffff;
+        
+                        }
+                        button{
+                            img{
+                                filter: brightness(0) saturate(100%) invert(100%) sepia(0%) saturate(7499%) hue-rotate(19deg) brightness(110%) contrast(98%)
+                            }
+                        }
+                    }
+                }
+            } 
+        }
+       
+        .author{
+            display: flex;
+            align-items: flex-end;
+
+            .author-img{
+                margin-right: 12px;
+            }
+            .author-title{
+                .name{
+                    color: #000;
+                    font-family: Poppins-Regular;
+                    font-weight: bold;
+                    font-size: 14px;
+                    letter-spacing: 0.14px;
+                }
+                .job-title{
+                    color: #757575;
+                    font-family: Poppins-Medium;
+                    font-size: 12px;
+                    letter-spacing: 0.12px;
+                }
+            }
+        }
+    }
+
+}
